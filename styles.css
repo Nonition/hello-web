@@ -1,0 +1,78 @@
+:root {
+  --bone: #f3ece1;
+  --bone-deep: #e8ddcc;
+  --ink: #241f1b;
+  --ink-soft: #5b5148;
+  --ember: #b4451f;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background:
+    radial-gradient(120% 90% at 12% 0%, #faf4e9 0%, rgba(250, 244, 233, 0) 60%),
+    linear-gradient(168deg, var(--bone) 0%, var(--bone-deep) 100%);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  display: grid;
+  place-items: center;
+  padding: 8vw;
+  -webkit-font-smoothing: antialiased;
+}
+
+.stage {
+  max-width: 42rem;
+  width: 100%;
+  text-align: left;
+}
+
+.eyebrow {
+  margin: 0 0 1.4rem;
+  font-family: ui-monospace, "Cascadia Mono", "SF Mono", Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ember);
+}
+
+.word {
+  margin: 0;
+  font-size: clamp(4.5rem, 22vw, 13rem);
+  line-height: 0.86;
+  letter-spacing: -0.045em;
+  font-weight: 400;
+  color: var(--ink);
+}
+
+.sub {
+  margin: 1.6rem 0 0;
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  line-height: 1.5;
+  color: var(--ink-soft);
+  max-width: 26rem;
+}
+
+.rule {
+  height: 1px;
+  margin: 2.2rem 0 1.1rem;
+  background: linear-gradient(90deg, var(--ember) 0%, rgba(180, 69, 31, 0.08) 100%);
+  max-width: 18rem;
+}
+
+.meta {
+  margin: 0;
+  font-family: ui-monospace, "Cascadia Mono", "SF Mono", Menlo, monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+}
+
+::selection {
+  background: var(--ember);
+  color: var(--bone);
+}
