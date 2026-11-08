@@ -1,0 +1,13 @@
+{
+  "name": "hello-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "One static page. One word. Hello.",
+  "scripts": {
+    "start": "serve -l 3000 .",
+    "dev": "serve -l 3000 ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
